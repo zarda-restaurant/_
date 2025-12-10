@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zarda - طعام مذهل ولذيذ</title>
+  <meta name="title" content="Zarda - طعام مذهل ولذيذ">
+  <meta name="description" content="هذا قالب HTML لمطعم أنشأه codewithsadee">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Zarda</p>
+  </div>
+
+
+
+
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          شارع المطعم، المدينة اللذيذة، لندن 9578، المملكة المتحدة
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">يوميًا: 8:00 صباحًا حتى 10:00 مساءً</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Zarda - الصفحة الرئيسية">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="إغلاق القائمة" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Zarda - الصفحة الرئيسية">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">الرئيسية</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">قوائم الطعام</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">من نحن</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">طُهاتنا</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">اتصل بنا</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">تفضل بزيارتنا</p>
+
+          <address class="body-4">
+            شارع المطعم، المدينة اللذيذة، <br>
+            لندن 9578، المملكة المتحدة
+          </address>
+
+          <p class="body-4 navbar-text">مفتوح: 9:30 صباحًا - 2:30 مساءً</p>
+
+          <a href="mailto:booking@zarda.com" class="body-4 sidebar-link">booking@zarda.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">طلب حجز</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +88-123-123456
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">ابحث عن طاولة</span>
+
+        <span class="text text-2" aria-hidden="true">ابحث عن طاولة</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="فتح القائمة" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <section class="hero text-center" aria-label="الصفحة الرئيسية" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">تقليدي وصحي</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              لحب <br>
+              الطعام اللذيذ
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              تعال مع عائلتك واستمتع ببهجة الطعام الشهي
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">اطلع على قائمتنا</span>
+
+              <span class="text text-2" aria-hidden="true">اطلع على قائمتنا</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">تجربة مبهجة</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              نكهات مستوحاة من <br>
+              المواسم
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              تعال مع عائلتك واستمتع ببهجة الطعام الشهي
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">اطلع على قائمتنا</span>
+
+              <span class="text text-2" aria-hidden="true">اطلع على قائمتنا</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">مذهل ولذيذ</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              حيث تحكي كل نكهة <br>
+              قصة
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              تعال مع عائلتك واستمتع ببهجة الطعام الشهي
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">اطلع على قائمتنا</span>
+
+              <span class="text text-2" aria-hidden="true">اطلع على قائمتنا</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="الانتقال إلى الشريحة السابقة" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="الانتقال إلى الشريحة التالية" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="أيقونة الحجز">
+
+          <span class="label-2 text-center span">احجز طاولة</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <section class="section service bg-black-10 text-center" aria-label="خدمة">
+        <div class="container">
+
+          <p class="section-subtitle label-2">نكهات تليق بالملوك</p>
+
+          <h2 class="headline-1 section-title">نقدم الأفضل</h2>
+
+          <p class="section-text">
+            لوريم إيبسوم هو مجرد نص شكلي يستخدم في صناعات الطباعة والتنضيد. لقد كان لوريم إيبسوم النص الشكلي القياسي في الصناعة على الإطلاق.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="وجبة الإفطار"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">وجبة الإفطار</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">عرض القائمة</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="المقبلات"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">المقبلات</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">عرض القائمة</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="المشروبات"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">المشروبات</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">عرض القائمة</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="شكل"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="شكل"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">قصتنا</p>
+
+            <h2 class="headline-1 section-title">كل نكهة تحكي قصة</h2>
+
+            <p class="section-text">
+              لوريم إيبسوم هو مجرد نص شكلي يستخدم في صناعات الطباعة والتنضيد. لقد كان لوريم إيبسوم النص الشكلي القياسي في الصناعة على الإطلاق منذ أن قام طابع غير معروف بأخذ مجموعة من الحروف وخلطها لتكوين كتاب عينة. لقد نجا ليس فقط خمسة قرون، بل ووصل إلى...
+            </p>
+
+            <div class="contact-label">احجز عبر الهاتف</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">اقرأ المزيد</span>
+
+              <span class="text text-2" aria-hidden="true">اقرأ المزيد</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="لافتة عنّا"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="طبق خاص"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="شارة" class="abs-img">
+
+            <p class="section-subtitle label-2">الطبق الخاص</p>
+
+            <h2 class="headline-1 section-title">رافيولي الكركند</h2>
+
+            <p class="section-text">
+              لوريم إيبسوم هو مجرد نص شكلي يستخدم في صناعات الطباعة والتنضيد. لقد كان لوريم إيبسوم النص الشكلي القياسي في الصناعة على الإطلاق منذ أن قام طابع غير معروف بأخذ مجموعة من الحروف.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">$40.00</del>
+
+              <span class="span body-1">$20.00</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">عرض كل القائمة</span>
+
+              <span class="text text-2" aria-hidden="true">عرض كل القائمة</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <section class="section menu" aria-label="وصف القائمة" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">اختيار خاص</p>
+
+          <h2 class="headline-1 section-title text-center">قائمة طعام شهية</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="سلطة يونانية"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">سلطة يونانية</a>
+                    </h3>
+
+                    <span class="badge label-1">موسمي</span>
+
+                    <span class="span title-2">$25.50</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    طماطم، فلفل أخضر، بصل خيار مقطع، زيتون، وجبنة فيتا.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="لازانيا"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">لازانيا</a>
+                    </h3>
+
+                    <span class="span title-2">$40.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    خضروات، أجبان، لحوم مفرومة، صلصة طماطم، توابل وبهارات
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="يقطين الجوز"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">يقطين الجوز</a>
+                    </h3>
+
+                    <span class="span title-2">$10.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    صناعة التنضيد لوريم لوريم إيبسوم هو مجرد نص شكلي للطباعة و.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="تيكوسن واجيو"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">تيكوسن واجيو</a>
+                    </h3>
+
+                    <span class="badge label-1">جديد</span>
+
+                    <span class="span title-2">$39.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    خضروات، أجبان، لحوم مفرومة، صلصة طماطم، توابل وبهارات.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="زيتون محشي"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">زيتون محشي</a>
+                    </h3>
+
+                    <span class="span title-2">$25.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    أفوكادو بلحم السلطعون، بصل أحمر، فلفل أحمر محشي بسلطة السلطعون وفلفل أخضر.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="سمك أوبو"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">سمك أوبو</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    خضروات، أجبان، لحوم مفرومة، صلصة طماطم، توابل وبهارات
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            خلال الشتاء يوميًا من <span class="span">7:00 مساءً</span> إلى <span class="span">9:00 مساءً</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">عرض كل القائمة</span>
+
+            <span class="text text-2" aria-hidden="true">عرض كل القائمة</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="شكل"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="شكل"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="الشهادات">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            أردت أن أشكركم على دعوتي لتناول تلك الوجبة العشاء المذهلة الليلة الماضية. كان الطعام استثنائيًا.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="سام جونسون"
+              class="img">
+
+            <p class="label-2 profile-name">سام جونسون</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section features text-center" aria-label="المميزات">
+        <div class="container">
+
+          <p class="section-subtitle label-2">لماذا تختارنا</p>
+
+          <h2 class="headline-1 section-title">قوتنا</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="أيقونة">
+                </div>
+
+                <h3 class="title-2 card-title">طعام صحي</h3>
+
+                <p class="label-1 card-text">لوريم إيبسوم هو مجرد نص شكلي للطباعة والتنضيد.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="أيقونة">
+                </div>
+
+                <h3 class="title-2 card-title">بيئة منعشة</h3>
+
+                <p class="label-1 card-text">لوريم إيبسوم هو مجرد نص شكلي للطباعة والتنضيد.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="أيقونة">
+                </div>
+
+                <h3 class="title-2 card-title">طُهاة ماهرون</h3>
+
+                <p class="label-1 card-text">لوريم إيبسوم هو مجرد نص شكلي للطباعة والتنضيد.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="أيقونة">
+                </div>
+
+                <h3 class="title-2 card-title">فعاليات وحفلات</h3>
+
+                <p class="label-1 card-text">لوريم إيبسوم هو مجرد نص شكلي للطباعة والتنضيد.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="شكل"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="شكل"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" alt="Zarda - الصفحة الرئيسية">
+          </a>
+
+          <address class="body-4">
+            شارع المطعم، المدينة اللذيذة، <br>
+            لندن 9578، المملكة المتحدة
+          </address>
+
+          <a href="mailto:booking@zarda.com" class="body-4 contact-link">booking@zarda.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">حجز: +88-123-123456</a>
+
+          <p class="body-4">
+            طلب حجز
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="contact-label">اتصل بنا</p>
+
+          <div class="social-link">
+
+            <a href="#" class="icon-holder">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+            </a>
+
+            <a href="#" class="icon-holder">
+              <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+            </a>
+
+            <a href="#" class="icon-holder">
+              <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+            </a>
+
+            <a href="#" class="icon-holder">
+              <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">القائمة</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">من نحن</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">طُهاتنا</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">اتصل بنا</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">فيسبوك</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">انستغرام</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">تويتر</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">يوتيوب</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/maps/@30.3795335,-9.4672784,8266m/data=!3m1!1e3?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D" class="label-2 footer-link hover-underline">خرائط جوجل</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">الشروط والأحكام</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">سياسة الخصوصية</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 <span class="span">Zarda</span>. جميع الحقوق محفوظة لـ <a href="https://codewithsadee.netlify.app/" target="_blank" class="link">codewithsadee</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <a href="#top" class="back-top-btn active" aria-label="العودة إلى الأعلى" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
