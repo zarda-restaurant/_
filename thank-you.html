@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <style>
-        /* أنماط أساسية لصفحة الشكر لضمان ظهورها بشكل جيد */
+        /* أنماط مخصصة للخلفية والكتابة */
         .thank-you-section {
             padding-top: 150px;
             padding-bottom: 150px;
@@ -22,34 +22,49 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--smoky-black-1); /* لون الخلفية الداكن */
             text-align: center;
+
+            /* تطبيق صورة الخلفية الجديدة */
+            background-image: url('./assets/images/thank.png');
+            background-size: cover; /* تغطية الشاشة بالكامل */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* لتثبيت الخلفية أثناء التمرير */
         }
 
         .thank-you-container {
-            max-width: 800px;
+            max-width: 700px; /* عرض مناسب للنص لتجنب التداخل */
+            margin: 0 20px;
             padding: 40px;
-            border: 2px solid var(--gold-web-golden); /* إطار ذهبي مميز */
+            border: 2px solid var(--gold-web-golden);
             border-radius: 8px;
-            background-color: var(--smoky-black-2); /* خلفية أغمق للكنتينر */
+            /* خلفية شبه شفافة لتوضيح النص فوق صورة الخلفية */
+            background-color: rgba(26, 26, 26, 0.85);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
         }
 
         .thank-you-title {
             color: var(--gold-web-golden);
             font-family: var(--font-family-forum);
-            font-size: 3em;
-            margin-bottom: 15px;
+            font-size: 3.5em; /* حجم أكبر للعنوان */
+            margin-bottom: 20px;
+            line-height: 1.1; /* تحسين تباعد الأسطر */
         }
 
         .thank-you-text {
             color: var(--white);
-            font-size: 1.1em;
+            font-size: 1.15em;
             line-height: 1.8;
             margin-bottom: 25px;
         }
 
         .thank-you-text strong {
             color: var(--gold-web-golden);
+        }
+
+        /* تعديل شكل الزر ليظهر بوضوح */
+        .btn-primary {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -58,25 +73,28 @@
     <section class="thank-you-section">
         <div class="thank-you-container">
             <p class="section-subtitle label-2">رسالة تأكيد</p>
-            <h1 class="thank-you-title">🎉 شكراً لك على حجزك في مطعم زردة!</h1>
+
+            <h1 class="thank-you-title">
+                🎉 شكراً جزيلاً لك على حجزك في مطعم زردة!
+            </h1>
 
             <p class="thank-you-text">
-                تم إرسال طلب حجزك بنجاح. سنقوم بمراجعته وإرسال تأكيد نهائي.
+                تم استلام طلب حجزك بنجاح. نحن في انتظار تأكيده من فريقنا.
             </p>
 
             <p class="thank-you-text">
-                **ماذا بعد؟**
+                **تأكيد الحجز:**
                 <br>
-                ستصلك رسالة تأكيد على بريدك الإلكتروني (`cloverbl1722@gmail.com`) تحتوي على تفاصيل الحجز (التاريخ، والوقت، وعدد الأشخاص). يرجى التحقق من صندوق الوارد والبريد غير المرغوب فيه.
+                ستصلك رسالة تفصيلية على بريدك الإلكتروني (`cloverbl1722@gmail.com`) تحتوي على جميع تفاصيل حجزك (التاريخ، والوقت، وعدد الأشخاص). يرجى التأكد من التحقق من صندوق الوارد والبريد غير المرغوب فيه.
             </p>
 
-            <a href="https://zarda-restaurant.github.io/" class="btn btn-primary">
+            <a href="https://zarda-restaurant.github.io/_/" class="btn btn-primary">
                 <span class="text text-1">العودة إلى الصفحة الرئيسية</span>
                 <span class="text text-2" aria-hidden="true">العودة إلى الرئيسية</span>
             </a>
 
             <p class="thank-you-text" style="margin-top: 20px;">
-                نتطلع إلى استضافتك قريباً.
+                نتطلع إلى استضافتك وتقديم أفضل تجربة طعام لك قريباً.
             </p>
         </div>
     </section>
